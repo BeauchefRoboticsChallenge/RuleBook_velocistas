@@ -120,22 +120,7 @@ El objetivo de la competencia es recorrer un circuito en el menor tiempo posible
 
 ## Recursos
 ### Figuras
-
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 350px;
-}
-
-.center > figcaption{
-  text-align: center;
-}
-</style>
-
+<link rel="stylesheet" type="text/css" media="all" href="./css/image.css" />
 <figure class="center">
 	<img src="./images/rules/figure1.png" alt="Figura 1">
 	<figcaption>Figure 1: Pista Referencial</figcaption>
