@@ -121,32 +121,47 @@ El objetivo de la competencia es recorrer un circuito en el menor tiempo posible
 ## Recursos
 ### Figuras
 
-<div style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
-	<img src="./images/rules/figure1.png" alt="Figura 1">
-	<figcaption style="text-align: center;">Figure 1: Pista Referencial</figcaption>
-</div>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 350px;
+}
 
-<div style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
+.center > figcaption{
+  text-align: center;
+}
+</style>
+
+<figure class="center">
+	<img src="./images/rules/figure1.png" alt="Figura 1">
+	<figcaption>Figure 1: Pista Referencial</figcaption>
+</figure>
+
+<figure class="center">
 	<img src="./images/rules/figure2.png" alt="Figura 2">
 	<figcaption>Figure 2: Cambios de Curvatura y Marcadores de Esquina</figcaption>
 </figure>
 
-<figure style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
+<figure class="center">
 	<img src="./images/rules/figure3.png" alt="Figura 3">
 	<figcaption>Figure 3: Intersección</figcaption>
 </figure>
 
-<figure style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
+<figure class="center">
 	<img src="./images/rules/figure4.png" alt="Figura 4">
 	<figcaption>Figure 4: Área de Salida/Meta</figcaption>
 </figure>
 
-<figure style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
+<figure class="center">
 	<img src="./images/rules/figure5.png" alt="Figura 5">
 	<figcaption>Figure 5: Marcador de Salida y de Meta</figcaption>
 </figure>
 
-<figure style= "display: block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px; width: 350px;">
+<figure class="center">
 	<img src="./images/rules/figure6.png" alt="Figura 6">
 	<figcaption>Figure 6: Portal de Salida/Meta</figcaption>
 </figure>
