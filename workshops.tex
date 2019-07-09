@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Title Page
+% LaTeX Template
+% Version 2.0 (17/7/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (LaTeX - Title Creation) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage}, rename
+% this file and move it to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./<new filename>.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+
+\usepackage{mathpazo} % Palatino font
+
+\usepackage{graphicx} 
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{float}
+
+\newcommand{\seclabel}[1]{\label{sec:#1}}
+\newcommand{\figlabel}[1]{\label{fig:#1}}
+\newcommand{\tablabel}[1]{\label{tab:#1}}
+\newcommand{\chaplabel}[1]{\label{chap:#1}}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\chapref}[1]{Chapter~\ref{chap:#1}}
+\newcommand{\tabref}[1]{Table~\ref{fig:#1}}
+
+\newcommand{\mynote}[2]{ 
+\fbox{\bfseries\sffamily\scriptsize#1}
+ \textcolor{red}{\small\textsf{\emph{#2}}}
+\fbox{\bfseries\sffamily\scriptsize }}
+\newcommand\mc[1]{\mynote{MC}{#1}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%  TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+  
+  \center % Centre everything on the page
+  
+  %------------------------------------------------
+  %  Logo
+  %------------------------------------------------
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{./images/logos/BRC_SinFondo.png}
+  \end{figure}
+
+  %------------------------------------------------
+  %  Title
+  %------------------------------------------------
+  
+  \HRule\\[0.4cm]
+  
+  {\Huge\bfseries Beauchef Robotic Challenge}\\[0.4cm] % Title of your document
+  {\LARGE\bfseries Talleres: Reglas y Recomendaciones}
+  \HRule\\[1.5cm]
+  
+  
+  \vfill\vfill
+  %------------------------------------------------
+  %  Organization
+  %------------------------------------------------
+
+  {\Large\bfseries Organizan}
+
+  \begin{figure}[h!]
+    \centering
+    \begin{minipage}{.24\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./images/logos/ieee.png}
+    \end{minipage}%
+    \begin{minipage}{.24\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./images/logos/comrob.png}
+    \end{minipage}
+    \begin{minipage}{.24\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./images/logos/fablab.jpg}
+    \end{minipage}
+    \begin{minipage}{.24\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./images/logos/ob.png}
+    \end{minipage}
+  \end{figure}
+
+  
+  \vfill\vfill\vfill % Position the date 3/4 down the remaining page
+  %------------------------------------------------
+  %  Date
+  %------------------------------------------------
+  
+  
+  {\large Version: \the\year} % Date, change the \today to a set date if you want to be precise
+  
+  %------------------------------------------------
+  %  Logo
+  %------------------------------------------------
+  
+  %\vfill\vfill
+  %\includegraphics[width=0.2\textwidth]{placeholder.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+   
+  %----------------------------------------------------------------------------------------
+  
+  \vfill % Push the date up 1/4 of the remaining page
+  
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+
+\section*{Acerca de}
+Este es el libro oficial de reglas y recomendaciones de los talleres realizados previos a la competencia de robótica Beauchef Robotic Challenge (BRC).
+
+Cualquier consulta, enviar un mail a: \href{mailto:beauchefrc@gmail.com}{beauchefrc@gmail.com}
+
+% \section*{Agradecimientos}
+
+% Queremos agradecer a los miembros de la Comunidad de Robótica, Fablab y IEEE UChile por adaptar las reglas y organizar la BRC.
+
+% También queremos agradecer a las siguientes instituciones por su colaboración en la realización de BRC:
+
+% \begin{itemize}
+%    \item \textbf{Facultad de Ingeniería y Ciencias (FCFM)} de la Universidad de Chile por el apoyo entregado para la realización de esta competencia. 
+%    \item  \textbf{Innovación y Robótica Estudiantil} de la Universidad Técnica Federico Santa María (UTFSM) por su invaluable apoyo en la creación de este libro y organización de BRC.
+%  \end{itemize} 
+
+
+\section*{Changelog}
+
+\begin{itemize}
+  \item \textbf{Julio 2019}
+  \begin{itemize}
+    \item Primera versión de este documento
+  \end{itemize}
+\end{itemize}
+
+\pagebreak
+
+\section{Introducción}
+
+Junto con BRC, la organización coordina una serie de talleres y hackatones complementarias a la competencia.
+Estos talleres son \textbf{obligatorios para los equipos que reciben becas}.
+
+No obstante, los talleres son abiertos a todas las personas que tienen intención de participar en la competencia.
+Se recomienda a todos los equipos que deseen participar inscribirse en los diferentes talleres y hackatones.
+
+
+Es importante destacar que los talleres son abiertos para toda la comunidad.
+La organización de BRC es dependiente de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile (UChile).
+A pesar de eso, decidimos abrir los talleres a todos los participantes, tanto miembros de la comunidad universitaria como externos a ella.
+
+Los talleres son realizados en la FCFM con un fuerte apoyo del FabLab UChile.
+Las personas que realicen los talleres, tienen permitido ocupar las dependencias del FabLab para el diseño y construcción de sus robots, previo aviso a la organización.
+
+En este documento se encuentran las fechas de los talleres.
+Lamentablemente, no podemos mantener las mismas condiciones para los diferentes actores.
+Por ende, este documento también presenta las diferentes reglas y condiciones para los diferentes actores que participen en los talleres.
+
+\section{Talleres}
+
+Como preparación para BRC, organizamos 5 talleres y 1 hackatón final.
+Todos los eventos son abiertos a los participantes de la competencia.
+
+\paragraph*{Diseño CAD: Miércoles 31 de Julio: 12:00 - 13:30}
+
+\paragraph*{Impresión 3D: Miércoles 5 de Agosto: 12:00 - 13:30}
+
+\paragraph*{Arduino y Electrónica Básica: Miércoles 14 de Agosto: 12:00 - 13:30}
+
+\paragraph*{Prototipado Electrónico: Miércoles 21 de Agosto: 12:00 - 13:30}
+
+\paragraph*{Arduino y Control de Sistemas: Miércoles 28 de Agosto: 12:00 - 13:30}
+
+\paragraph*{Hackatón: Sábado 7 de Septiembre: Todo el día}
+En la hackatón final guiamos a los competidores en la construcción de sus robots.
+Miembros de la organización y diversos tutores apoyan a los equipos todo el día.
+La idea es que los equipos ya tengan parte del desarrollo avanzado y en esta instancia se resuelvan temas más complejos.
+
+\section{Ganadores de Becas}
+Para competidores becados, la participación en los talleres y hackatón final es \textbf{obligatoria}.
+Si un equipo tiene problemas, se recomienda comunicarse lo antes posible con la organización.
+
+El uso del FabLab es abierto luego de la realización de los talleres.
+Además, el uso de componentes del FabLab, como plástico para impresiones, es gratuito.
+
+\section{Miembros de FCFM}
+Se recomienda a los miembros no becados de la FCFM que se inscriban a los llamados de cada uno de los talleres en su momento.
+
+El uso del FabLab es abierto luego de la realización de los talleres.
+Sin embargo, el uso del FabLab está regido bajo las reglas del FabLab.
+En particular, se cobrará por el uso de componentes:
+
+\mc{precios}
+
+
+\section{Miembros de la Universidad de Chile}
+Se recomienda a los miembros de la universidad inscribirse en los talleres que deseen participar, así será más fácil el acceso a la facultad para esos días.
+
+Al igual que los miembros anteriores, el uso del FabLab es abierto luego de la realización de los talleres.
+Se recomienda avisar a la organización si usarán las dependencias del FabLab.
+
+Los participantes que utilicen el FabLab deben regirse bajo las reglas del laboratorio.
+En particular, se cobrará por el uso de componentes:
+
+\mc{precios}
+
+
+\section{Externos a la Universidad de Chile}
+Si quieren participar en los talleres, los miembros ajenos a la comunidad de la Universidad de Chile deben inscribirse \textbf{obligatoriamente}. 
+Como organización no aseguraremos el acceso a participantes que no se hayan inscritos.
+
+El uso del FabLab es abierto luego de la realización de talleres.
+Para poder utilizarlo, los participantes primero deben inscribirse en la competencia BRC.
+Luego, deben mandar un correo con los nombres de los participantes que utilizarán las dependencias del FabLab, y el equipo al que pertenecen.
+Si tienen cualquier duda, se recomienda contactar con la organización de BRC.
+
+Los participantes que utilicen el FabLab deben regirse bajo las reglas del laboratorio.
+En particular, se cobrará por el uso de componentes:
+
+\mc{precios}
+
+
+\end{document}
